@@ -1,0 +1,122 @@
+body {
+    background-color: #E5E5E5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    color: #2F2F2F;
+    text-align: center;
+}
+
+/* main elements */
+.header {
+    font-size: 48px;
+    line-height: 72px;
+    color: #000000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 1180px;
+    margin: 0 auto;
+}
+
+.weekProduct {
+    overflow: hidden;
+    background: #FFFFFF;
+    border-radius: 12px;
+    width: 380px;
+    height: 482px;
+    position: relative;
+    box-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.18);
+}
+
+
+/* stickers display */
+.stickers {
+    display: flex;
+    position: absolute;
+    margin-left: 17px;
+    top: 1px;
+}
+
+.sticker {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.sticker_newOne,
+.sticker_lastOne {
+    border-radius: 8px;
+    padding: 1px 16px;
+}
+
+.sticker_newOne {
+    background: #FDCFF3;
+}
+
+.sticker_lastOne {
+    background: #FFCF56;
+    margin-left: 17px;
+}
+
+/* content */
+.product {
+    margin-left: 24px;
+    text-align: left;
+}
+
+.product_name {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 900;
+}
+
+.product_description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    width: 332px;
+}
+
+/* buttons */
+.button_toBasket {
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 18px;
+    border: 2px solid #42940F;
+    ;
+    color: #42940F;
+    background: transparent;
+    border-radius: 12px;
+    height: 48px;
+    width: 332px;
+    position: absolute;
+    left: 24px;
+    bottom: 24.25px;
+}
+
+.button_toBasket:disabled {
+    background-color: #4E4E4E;
+    color: #FFFFFF;
+    border: 1px solid #4E4E4E;
+}
+
+.button_toBasket:hover:enabled {
+    background-color: #42940F;
+    color: #FFFFFF;
+}
+
+.button_toBasket:active:enabled {
+    background-color: #1F5200;
+    color: #FFFFFF;
+}
+
+/* setting different display for smaller screen */
+@media screen and (max-width:600px) {
+    .container {
+        flex-direction: column;
+        width: fit-content;
+        gap: 20px;
+    }
+}
